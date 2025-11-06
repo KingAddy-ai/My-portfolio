@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aditya Swain - Aspiring Front-End Web Developer Portfolio showcasing HTML, CSS, JavaScript projects"
+    />
+    <meta
+      name="keywords"
+      content="web developer, front-end, HTML, CSS, JavaScript, portfolio, Aditya Swain"
+    />
+    <meta name="author" content="Aditya Swain" />
+    <title>Aditya Swain - Front-End Developer Portfolio</title>
+    <link href="normalize.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#aboutme" aria-label="About Me section">About Me</a></li>
+        <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+        <li>
+          <a href="#contactme" aria-label="Contact Me section">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="hero" role="banner">
+      <div class="container">
+        <img
+          src="image/mypic.jpeg"
+          alt="Portrait of Aditya Swain, front-end developer"
+          width="200"
+          height="200"
+        />
+        <h1>Hi I'm Aditya Swain! I'm an aspiring Full stack web developer</h1>
+      </div>
+    </header>
+
+    <main role="main">
+      <section id="aboutme" class="aboutme" aria-labelledby="about-heading">
+        <h2 id="about-heading">About me</h2>
+        <div class="aboutme-content">
+          <div class="aboutme-image">
+            <img
+              src="image/myimg.jpeg"
+              alt="Aditya Swain working on a web development project"
+              width="300"
+              height="350"
+            />
+          </div>
+          <div class="aboutme-text">
+            <p>
+              I'm a 20 year old student who loves coding and web development.
+              Hi, I'm Aditya Swain, an aspiring web developer with a passion for
+              creating dynamic and user-friendly web applications. With a strong
+              foundation in HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              I enjoy transforming ideas into engaging digital experiences. I
+              thrive on challenges and am constantly learning new technologies
+              to enhance my skills. My goal is to build innovative solutions
+              that not only meet user needs but also push the boundaries of
+              creativity.
+            </p>
+            <p>
+              When I'm not coding, you can find me exploring the latest tech
+              trends or working on personal projects that fuel my curiosity.
+              Let's connect and create something amazing together!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="projects"
+        aria-labelledby="projects-heading"
+      >
+        <h2 id="projects-heading">My Projects</h2>
+        <div class="projects-container">
+          <article class="project-card">
+            <img
+              src="image/weather-radar-png-3.png"
+              alt="E-Commerce Website Project Screenshot"
+              width="350"
+              height="200"
+            />
+            <div class="project-info">
+              <h3>Responsive Weather App</h3>
+              <p>
+                A fully responsive Weather App built with React and Node.js.
+                Features include real-time weather updates, location-based
+                filtering, and a sleek user interface.
+              </p>
+              <ul>
+                <li>React.js frontend with responsive design</li>
+                <li>Node.js/Express backend API</li>
+                <li>Integration with OpenWeatherMap API</li>
+                <li>Location-based weather data fetching</li>
+                
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/KingAddy-ai/Weather_app.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  aria-label="View E-Commerce project code on GitHub"
+                  >View Code</a
+                >
+                <a
+                  href="https://kingaddy-ai.github.io/Weather_app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  aria-label="View project live demo"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img
+              src="image/earth.jpeg"
+              alt="HTML Portfolio Project Screenshot"
+              width="350"
+              height="200"
+            />
+            <div class="project-info">
+              <h3>HTML Portfolio Project</h3>
+              <p>
+                A responsive portfolio website built with pure HTML and CSS.
+                Demonstrates modern web design principles and mobile-first
+                responsive design.
+              </p>
+              <ul>
+                <li>Semantic HTML5 structure</li>
+                <li>CSS Grid and Flexbox layouts</li>
+                <li>Mobile-first responsive design</li>
+                <li>CSS animations and transitions</li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/KingAddy-ai/Earth-Facts.git"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  aria-label="View HTML Portfolio project code on GitHub"
+                  >View Code</a
+                >
+                <a
+                  href="https://kingaddy-ai.github.io/Earth-Facts/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                  aria-label="View HTML Portfolio project live demo"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="contactme"
+        class="contactme"
+        aria-labelledby="contact-heading"
+      >
+        <h2 id="contact-heading">Contact Me</h2>
+        <form
+          action="https://formspree.io/f/myyourform"
+          method="POST"
+          class="contact-form"
+          aria-label="Contact form"
+        >
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            aria-required="true"
+            placeholder="Tell me about your project or question..."
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info" style="text-align: center; margin-top: 30px">
+          <p>Or connect with me on:</p>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              margin-top: 15px;
+            "
+          >
+            <a
+              href="https://www.linkedin.com/in/aditya-narayan-swain-679508241/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Connect on LinkedIn"
+            >
+              <img
+                src="image/icons8-linkedin-100.png"
+                alt="LinkedIn Profile"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a
+              href="https://github.com/KingAddy-ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View GitHub Profile"
+            >
+              <img
+                src="image/icons8-github-96.png"
+                alt="GitHub Profile"
+                width="40"
+                height="40"
+              />
+            </a>
+            <a href="mailto:adityaswain31@email.com" aria-label="Send email">
+              <img
+                src="image/icons8-gmail-144.png"
+                alt="Email"
+                width="40"
+                height="40"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-name">Aditya Swain &copy; 2024</div>
+        <div class="footer-social">
+          <a
+            href="www.linkedin.com/in/aditya-narayan-swain-679508241/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn Profile"
+          >
+            <img
+              src="image/icons8-linkedin-100.png"
+              alt="LinkedIn"
+              class="social-logo"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a
+            href="https://github.com/KingAddy-ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub Profile"
+          >
+            <img src="image/icons8-github-96.png"
+              alt="GitHub"
+              class="social-logo"
+              width="50"
+              height="50"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
